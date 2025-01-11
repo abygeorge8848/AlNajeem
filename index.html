@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="BAIT ALNAJEM CLEANING SERVICES L.L.C Website" />
+  <meta name="keywords" content="Cleaning, Services, Dubai, Disinfection, Sterilization" />
+  <meta name="author" content="BAIT ALNAJEM CLEANING SERVICES L.L.C" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAIT ALNAJEM CLEANING SERVICES L.L.C</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <style>
+    /* GLOBAL STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    /* SCROLL PROGRESS BAR */
+    #progressBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background: #00796b;
+      z-index: 9999;
+    }
+
+    /* HERO SECTION */
+    header {
+      position: relative;
+      /* Reduced height from 100vh to 60vh */
+      height: 60vh;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url('https://source.unsplash.com/1600x900/?dubai,cleaning') no-repeat center
+          center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    header .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60vh;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 77, 64, 0.2),
+        rgba(0, 77, 64, 0.2)
+      );
+      z-index: 1;
+    }
+    header .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    header .btn-hero {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #004d40;
+      color: #fff;
+      font-weight: 500;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+    header .btn-hero:hover {
+      background-color: #00796b;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: #004d40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav li {
+      margin: 0 5px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 500;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+    nav a:hover {
+      background: #00796b;
+      color: #fff;
+    }
+
+    /* SECTIONS */
+    section {
+      /* Reduced the overall padding from 60px to 40px for less spacing */
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #004d40;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    .service h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #004d40;
+    }
+    .service i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    /* ABOUT, CONTACT, FAQ */
+    .about,
+    .contact,
+    .faq {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .about p,
+    .contact p,
+    .faq p {
+      margin: 15px 0;
+      line-height: 1.8;
+    }
+
+    /* THIN CAROUSEL FOR OFFERS - FULL WIDTH */
+    .offers-fullwidth {
+      width: 100%;
+      height: 50px; /* "Thin" height of carousel */
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .carousel-track {
+      display: flex;
+      white-space: nowrap;
+      animation: scrollOffers 20s linear infinite;
+    }
+    .carousel-item {
+      display: inline-block;
+      padding: 0 120px;
+      font-weight: bold;
+      color: #00796b;
+      font-size: 1rem;
+    }
+    @keyframes scrollOffers {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* scroll half the total track width (because it's duplicated) */
+    transform: translateX(-50%);
+  }
+}
+
+    /* FAQ */
+    .faq h3 {
+      font-size: 1.2rem;
+      margin: 1rem 0 0.5rem;
+      color: #00796b;
+    }
+    .faq-details {
+      display: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+    .faq-question {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .faq-question:hover {
+      color: #004d40;
+    }
+
+    /* CONTACT */
+    .contact-icons i {
+      margin-right: 10px;
+      color: #004d40;
+    }
+    .contact a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #004d40;
+    }
+
+    /* SIMPLE CONTACT FORM */
+    .contact-form {
+      margin-top: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .contact-form button {
+      background-color: #004d40;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #00796b;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004d40;
+      color: #fff;
+      margin-top: 0;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* BACK TO TOP BUTTON */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #00796b;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      z-index: 999;
+    }
+    #backToTop:hover {
+      background-color: #004d40;
+    }
+
+    /* LIVE CHAT BUBBLE (WHATSAPP) */
+    .chat-bubble {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .chat-bubble:hover {
+      transform: scale(1.1);
+    }
+    .chat-bubble i {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    /* EMAIL CHOICE MODAL */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 2000; /* Sit on top of other elements */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .modal-content h2 {
+      margin-bottom: 20px;
+      color: #004d40;
+    }
+    .modal-btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 20px;
+      background-color: #004d40;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+    .modal-btn:hover {
+      background-color: #00796b;
+    }
+
+    /* MEDIA QUERIES */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .carousel-item {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* =========================================
+     BUSINESS CARD STYLES
+     (copied from the snippet, but **without** 
+     the body background animation)
+     ========================================= */
+
+  /* Keyframe only if you still want to keep a subtle gradient animation
+     If not required, you can remove the @keyframes block. */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .card-container {
+    perspective: 1200px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto; /* Center nicely in container */
+  }
+
+  .business-card {
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+  }
+
+  .business-card:hover {
+    transform: rotateY(180deg) scale(1.03);
+  }
+
+  .card-side {
+    position: absolute;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #d4af37;
+    box-shadow: 
+      0 0 20px rgba(212, 175, 55, 0.5), 
+      0 0 10px rgba(212, 175, 55, 0.8) inset;
+  }
+
+  .card-side.front {
+    background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+    padding: 20px 20px 30px; 
+  }
+
+  .card-side.back {
+    background: linear-gradient(to bottom right, #fafafa, #eeeeee);
+    transform: rotateY(180deg);
+    padding: 20px 20px 30px; 
+  }
+
+  .card-header {
+    background: linear-gradient(to right, #d4af37, #b38b30);
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    box-shadow: 
+      0 2px 5px rgba(0, 0, 0, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .card-body .title {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #d4af37, #b38b30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .details-and-qr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .details {
+    flex: 1 1 200px; 
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .qr-code {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .qr-code img {
+    max-width: 120px;
+    max-height: 120px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+  }
+
+  .card-footer {
+    background: linear-gradient(to right, #d4af37, #b38b30);
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 
+      0 2px 5px rgba(0, 0, 0, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+
+  .card-footer-1 {
+    background: linear-gradient(to right, #d4af37, #b38b30);
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    position: relative;
+    box-shadow: 
+      0 2px 5px rgba(0, 0, 0, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+
+  .details p strong:hover {
+    color: #d4af37;
+    transition: color 0.4s ease;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .business-card {
+      transform: none;
+      cursor: default;
+    }
+    .business-card:hover {
+      transform: none;
+    }
+    .card-header {
+      font-size: 1em;
+      padding: 8px;
+    }
+    .card-body .title {
+      font-size: 1.4em;
+    }
+    .details p {
+      font-size: 0.9em;
+    }
+    .qr-code img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+
+  /* 
+  TRANSPARENT MODAL BACKDROP
+  --------------------------------
+  Change background-color to a more subtle RGBA if you want 
+  partial transparency. Or use 'transparent' for 100% see-through.
+*/
+.card-modal {
+  display: none; 
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Slight transparency so we see the page behind the modal */
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/*
+  CARD MODAL CONTENT
+  - We add padding-top so the flipping card sits lower, leaving space 
+    for the icon buttons at the top center.
+*/
+.card-modal-content {
+  position: relative;
+  background-color: transparent; /* or #fff if you want a white container */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding-top: 60px; /* space for the action buttons */
+}
+
+/*
+  ACTION BUTTONS ROW (SHARE & CANCEL ICONS)
+  - Absolutely position them at the top center.
+*/
+.card-modal-actions {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 999; /* Above the card */
+}
+
+/*
+  ICON BUTTONS
+*/
+.icon-btn {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.icon-btn:hover {
+  background-color: #004d40;
+}
+.icon-btn i {
+  font-size: 1.2rem;
+}
+
+/* 
+  Floating "View Card" icon button
+  ------------------------------------
+  Position it above the WhatsApp bubble (which might be at bottom: 100px).
+*/
+.floating-card-button {
+  position: fixed;
+  bottom: 160px; /* Adjust so it's above the chat bubble */
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #00796b; 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999; /* Ensures it appears above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.floating-card-button:hover {
+  transform: scale(1.1);
+}
+.floating-card-button i {
+  color: #fff;
+  font-size: 1.4rem; /* Adjust icon size */
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progressBar"></div>
+
+  <!-- HEADER / HERO SECTION -->
+  <header>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>BAIT ALNAJEM CLEANING</h1>
+      <p>Redefining Cleanliness in Dubai</p>
+      <a href="#contact" class="btn-hero">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- OFFERS CAROUSEL - FULL WIDTH, RIGHT BELOW HERO -->
+  <div class="offers-fullwidth">
+    <div class="carousel-track">
+      <div class="carousel-item">
+        20% Off on all residential cleaning services this month!      
+      </div>
+      <div class="carousel-item">
+        Free carpet shampooing for orders above AED 500!
+      </div>
+      <div class="carousel-item">
+        Get a complimentary disinfection with any full-home cleaning package!
+      </div>
+
+       <!-- Duplicate items for seamless looping -->
+       <div class="carousel-item">
+        20% Off on all residential cleaning services this month!      
+      </div>
+      <div class="carousel-item">
+        Free carpet shampooing for orders above AED 500!
+      </div>
+      <div class="carousel-item">
+        Get a complimentary disinfection with any full-home cleaning package!
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#vision">Our Vision</a></li>
+      <li><a href="#managers">Leadership</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fas fa-building"></i>
+        <h3>Building Cleaning Activities</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-briefcase"></i>
+        <h3>Office Cleaning Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-car"></i>
+        <h3>Carpet Shampooing</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-couch"></i>
+        <h3>Sofa & Chair Cleaning Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-home"></i>
+        <h3>Residential Property Care Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-virus"></i>
+        <h3>Disinfection & Sterilization Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-water"></i>
+        <h3>Tanks & Containers Cleaning Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-ad"></i>
+        <h3>Advertising Signboards Cleaning Services</h3>
+      </div>
+      <div class="service">
+        <i class="fas fa-tree"></i>
+        <h3>Villas and Garden Services</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANAGEMENT VISION SECTION -->
+  <section id="vision">
+    <h2 class="section-title">Management Vision</h2>
+    <div class="about">
+      <p>
+        At <strong>BAIT ALNAJEM CLEANING SERVICES L.L.C</strong>, we aim to set a new benchmark for 
+        cleaning services in Dubai by combining innovation, excellence, and a commitment to 
+        customer satisfaction. Our leadership team is driven by a passion for quality, 
+        sustainability, and professionalism, ensuring every client experiences a spotless, safe, 
+        and welcoming environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP SECTION -->
+  <section id="managers">
+    <h2 class="section-title">Leadership</h2>
+    <div class="about">
+      <h3>Mr. Mathew Thomas</h3>
+      <p>
+        <i class="fas fa-user-tie"></i>
+        With over 30 years of experience, Mr. Mathew Thomas brings unmatched expertise to the 
+        cleaning industry, ensuring integrity and professionalism in every service.
+      </p>
+      <h3>Mr. Johnson Mathai</h3>
+      <p>
+        <i class="fas fa-user-tie"></i>
+        Mr. Johnson Mathai, with his M.Com and decades of leadership, is dedicated to customer 
+        satisfaction and delivering tailored cleaning solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-question">
+        <h3>1. How do I book a cleaning service?</h3>
+      </div>
+      <div class="faq-details">
+        <p>
+          You can call or WhatsApp us, or fill out the contact form below. One of our 
+          representatives will get in touch to schedule your service.
+        </p>
+      </div>
+
+      <div class="faq-question">
+        <h3>2. What areas do you cover in Dubai?</h3>
+      </div>
+      <div class="faq-details">
+        <p>
+          We provide services across most areas in Dubai. Please contact us to confirm 
+          availability in your specific location.
+        </p>
+      </div>
+
+      <div class="faq-question">
+        <h3>3. What are your payment options?</h3>
+      </div>
+      <div class="faq-details">
+        <p>
+          We accept cash, major credit/debit cards, and bank transfers. Payment details 
+          will be provided upon service confirmation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <p class="contact-icons">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+971528139957">+971 52 813 9957</a> (Mr. Mathew Thomas)
+      </p>
+      <p class="contact-icons">
+        <i class="fas fa-phone-alt"></i>
+        <a href="tel:+971502247563">+971 50 2247 563</a> (Mr. Johnson Mathai)
+      </p>
+      <p class="contact-icons">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:info@baitalnajem.com">info@baitalnajem.com</a>
+      </p>
+      <p class="contact-icons">
+        <i class="fab fa-whatsapp"></i>
+        <a
+          href="https://wa.me/971528139957?text=Hello%20BAIT%20ALNAJEM%20Cleaning%20Services"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Message on WhatsApp</a
+        >
+      </p>
+      <p><strong>Office Address:</strong></p>
+      <p>UNIQUE ADVENTURE BUSINESS CENTER, OF605-68, Dubai, United Arab Emirates</p>
+
+      <!-- Simple Contact Form triggers a modal with 3 email options -->
+      <div class="contact-form">
+        <h3>Send us a message</h3>
+        <form onsubmit="showEmailModal(); return false;">
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- LIVE CHAT BUBBLE (WHATSAPP) -->
+  <div class="chat-bubble">
+    <a
+      href="https://wa.me/971528139957?text=Hello%20BAIT%20ALNAJEM%20Cleaning%20Services"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- VIEW CARD ICON BUTTON -->
+  <button id="viewCardBtnIcon" class="floating-card-button">
+    <i class="fas fa-id-card"></i> <!-- or any icon you prefer -->
+  </button>
+  
+
+
+   <!-- FOOTER -->
+   <footer>
+    <p>&copy; 2025 BAIT ALNAJEM CLEANING SERVICES L.L.C. All rights reserved.</p>
+    <p>Designed with <i class="fas fa-heart" style="color: red;"></i> in Dubai</p>
+  </footer>
+
+<!-- BUSINESS CARD MODAL -->
+<div id="cardModal" class="card-modal">
+    <div class="card-modal-content">
+      <!-- Icon Buttons Row (Share & Cancel), absolute at the top center -->
+      <div class="card-modal-actions">
+        <button id="shareCardBtn" class="icon-btn" title="Share Card">
+          <i class="fas fa-share-alt"></i>
+        </button>
+        <button id="cancelCardBtn" class="icon-btn" title="Close Card">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+  
+      <!-- Flipping Business Card -->
+      <div class="card-container">
+        <div class="business-card">
+          <!-- FRONT -->
+          <div class="card-side front">
+            <div class="card-header">BAIT ALNAJEM CLEANING SERVICES L.L.C</div>
+            <div class="card-body">
+              <div class="title">Professional Cleaning Services</div>
+              <div class="details-and-qr">
+                <div class="details">
+                  <p>Building Cleaning | Office Cleaning</p>
+                  <p>Carpet &amp; Sofa Shampooing</p>
+                  <p>Disinfection &amp; Sterilization</p>
+                </div>
+                <div class="qr-code">
+                  <img
+                    src="https://via.placeholder.com/120x120.png?text=QR+Code"
+                    alt="QR Code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">www.baitalnajem.com</div>
+          </div>
+  
+          <!-- BACK -->
+          <div class="card-side back">
+            <div class="card-header">Contact Information</div>
+            <div class="card-body">
+              <div class="details">
+                <p><strong>Mr. Mathew Thomas:</strong> +971 52 813 9957</p>
+                <p><strong>Mr. Johnson Mathai:</strong> +971 50 2247 563</p>
+                <p><strong>Email:</strong> info@baitalnajem.com</p>
+                <p>
+                  <strong>Office Address:</strong> Unique Adventure Business Center,
+                  OF605-68, Dubai, UAE
+                </p>
+              </div>
+            </div>
+            <div class="card-footer-1">"Creating Healthier, Happier Spaces"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  </div>
+
+  <!-- EMAIL CHOICE MODAL -->
+  <div id="emailModal" class="modal">
+    <div class="modal-content">
+      <h2>Choose Your Email Service</h2>
+      <p>
+        Select a method to send your message. If you're not logged in to Gmail or Outlook,
+        you'll be prompted to log in.
+      </p>
+      <button class="modal-btn" onclick="useDefaultClient()">Default Mail Client</button>
+      <button class="modal-btn" onclick="useGmail()">Gmail</button>
+      <button class="modal-btn" onclick="useOutlook()">Outlook</button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    /***** SHOW/HIDE FAQ DETAILS *****/
+    document.querySelectorAll('.faq-question').forEach((question) => {
+      question.addEventListener('click', () => {
+        const details = question.nextElementSibling;
+        if (details.style.display === 'block') {
+          details.style.display = 'none';
+        } else {
+          details.style.display = 'block';
+        }
+      });
+    });
+
+    /***** BACK TO TOP BUTTON *****/
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'flex';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    /***** PROGRESS BAR (SCROLL) *****/
+    const progressBar = document.getElementById('progressBar');
+    window.onscroll = function() {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      progressBar.style.width = progress + '%';
+    };
+
+    /***** EMAIL CHOICE MODAL LOGIC *****/
+    function showEmailModal() {
+      // Show the modal so the user can pick how they want to send the email
+      document.getElementById('emailModal').style.display = 'flex';
+    }
+
+    // Close modal if user clicks outside the modal content
+    window.onclick = function(event) {
+      const modal = document.getElementById('emailModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+
+    // Gather data from form fields
+    function getEmailFormData() {
+      const name = encodeURIComponent(document.getElementById('contact-name').value.trim());
+      const email = encodeURIComponent(document.getElementById('contact-email').value.trim());
+      const message = encodeURIComponent(document.getElementById('contact-message').value.trim());
+      const subject = encodeURIComponent(`New Inquiry from ${decodeURIComponent(name)}`);
+
+      // For the body, we add line breaks using %0D%0A for mailto links
+      const body = encodeURIComponent(
+        `Hello BAIT ALNAJEM,\n\n` +
+        `My name is ${decodeURIComponent(name)}.\n` +
+        `Email: ${decodeURIComponent(email)}\n\n` +
+        `Message:\n${decodeURIComponent(message)}\n`
+      );
+
+      return { name, email, message, subject, body };
+    }
+
+    // Option 1: Use Default Mail Client (mailto:)
+    function useDefaultClient() {
+      const { subject, body } = getEmailFormData();
+      window.location.href = `mailto:info@baitalnajem.com?subject=${subject}&body=${body}`;
+      closeModal();
+    }
+
+    // Option 2: Use Gmail
+    function useGmail() {
+      const { subject, body } = getEmailFormData();
+      // Gmail compose link
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info@baitalnajem.com&su=${subject}&body=${body}`;
+      window.open(gmailUrl, '_blank');
+      closeModal();
+    }
+
+    // Option 3: Use Outlook (Outlook.com)
+    function useOutlook() {
+      const { subject, body } = getEmailFormData();
+      // Outlook compose link
+      // 'body' can be used as &body=, subject as &subject= 
+      const outlookUrl = `https://outlook.live.com/owa/?path=/mail/action/compose&to=info@baitalnajem.com&subject=${subject}&body=${body}`;
+      window.open(outlookUrl, '_blank');
+      closeModal();
+    }
+
+    function closeModal() {
+      document.getElementById('emailModal').style.display = 'none';
+    }
+
+    // Grab references
+  const viewCardBtnIcon = document.getElementById('viewCardBtnIcon');
+  const cardModal = document.getElementById('cardModal');
+  const cancelCardBtn = document.getElementById('cancelCardBtn');
+  const shareCardBtn = document.getElementById('shareCardBtn');
+
+  // Show the modal on click
+  viewCardBtnIcon.addEventListener('click', () => {
+    cardModal.style.display = 'flex';
+  });
+
+  // Hide the modal
+  function closeCardModal() {
+    cardModal.style.display = 'none';
+  }
+
+  // Close when clicking the "cancel" icon
+  cancelCardBtn.addEventListener('click', closeCardModal);
+
+  // Also close if user clicks outside the card area
+  window.addEventListener('click', (event) => {
+    if (event.target === cardModal) {
+      closeCardModal();
+    }
+  });
+
+  // Share button logic (using Web Share API, if supported)
+  shareCardBtn.addEventListener('click', () => {
+    if (navigator.share) {
+      navigator.share({
+        title: 'BAIT ALNAJEM CLEANING SERVICES L.L.C',
+        text: 'Check out this digital business card!',
+        url: window.location.href
+      })
+      .then(() => console.log('Thanks for sharing!'))
+      .catch(err => console.error('Error sharing:', err));
+    } else {
+      alert('Web Share API not supported on this browser. Please copy the link manually.');
+    }
+  });
+
+  </script>
+</body>
+</html>
