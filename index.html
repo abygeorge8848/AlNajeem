@@ -753,6 +753,108 @@
   font-size: 1.4rem; /* Adjust icon size */
 }
 
+/* ===========================
+   ADDITIONAL MEDIA QUERIES
+   =========================== */
+
+/* For tablets and devices ~768px wide or less */
+@media (max-width: 768px) {
+  /* Stack nav items vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  /* Adjust carousel item spacing */
+  .carousel-item {
+    padding: 0 40px;
+  }
+
+  /* Reduce heading sizes */
+  header h1 {
+    font-size: 2rem; /* or adjust as needed */
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* For phones and very small devices (~600px or less) */
+@media (max-width: 600px) {
+  /* Let the offers carousel grow in height if needed */
+  .offers-fullwidth {
+    height: auto;
+  }
+
+  .carousel-track {
+    /* Slow the animation slightly for smaller screens */
+    animation: scrollOffers 30s linear infinite;
+  }
+
+  /* Scale font sizes in the carousel */
+  .carousel-item {
+    font-size: 0.85rem;
+    padding: 0 20px;
+  }
+
+  /* Make the nav links smaller and easier to tap */
+  nav a {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  /* Tighten up spacing in sections */
+  section {
+    padding: 30px 15px;
+  }
+
+  /* Adjust service card padding for mobile */
+  .service {
+    padding: 15px;
+  }
+
+  /* Reduce padding in about/contact/faq boxes */
+  .about,
+  .contact,
+  .faq {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  /* Scale down the floating chat bubble & card button */
+  .chat-bubble,
+  .floating-card-button {
+    width: 40px;
+    height: 40px;
+    bottom: 80px;
+    right: 20px;
+  }
+  .floating-card-button {
+    bottom: 140px; /* Keep it above the chat bubble */
+  }
+
+  /* Footer text size */
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /* Keep the business card flat (no hover flip) for very small screens */
+  .business-card {
+    transform: none;
+    cursor: default;
+    transition: none;
+  }
+  .business-card:hover {
+    transform: none;
+  }
+}
+
+
 
 
   </style>
