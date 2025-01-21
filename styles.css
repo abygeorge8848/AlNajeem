@@ -8,8 +8,8 @@
 
   body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #838383;
+    background-color: #dfdfdf;
     line-height: 1.6;
     position: relative;
   }
@@ -21,30 +21,30 @@
     left: 0;
     width: 0;
     height: 4px;
-    background: #00796b;
+    background: #6fa819;
     z-index: 9999;
   }
 
   /* HERO SECTION */
   header {
-    position: relative;
-    /* Reduced height from 100vh to 60vh */
-    height: 60vh;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.3)
-      ),
-      url('https://source.unsplash.com/1600x900/?dubai,cleaning') no-repeat center
-        center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 0;
+      position: relative;
+      height: 60vh;
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url('./dalle2.webp') 
+        no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 0;
   }
+  
   header .hero-overlay {
     position: absolute;
     top: 0;
@@ -79,7 +79,7 @@
   header .btn-hero {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #004d40;
+    background-color: #00adef;
     color: #fff;
     font-weight: 500;
     border: none;
@@ -89,7 +89,7 @@
     text-decoration: none;
   }
   header .btn-hero:hover {
-    background-color: #00796b;
+    background-color: #8cbe3f;
   }
 
   /* NAVIGATION */
@@ -97,7 +97,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background: #004d40;
+    background: #00adef;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@
     display: inline-block;
   }
   nav a:hover {
-    background: #00796b;
+    background: #6fa819;
     color: #fff;
   }
 
@@ -134,7 +134,7 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #004d40;
+    color: #00adef;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -160,12 +160,12 @@
   .service h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #004d40;
+    color: #00adef;
   }
   .service i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #00796b;
+    color: #6fa819;
   }
 
   /* ABOUT, CONTACT, FAQ */
@@ -206,7 +206,7 @@
     display: inline-block;
     padding: 0 120px;
     font-weight: bold;
-    color: #00796b;
+    color: #6fa819;
     font-size: 1rem;
   }
   @keyframes scrollOffers {
@@ -223,7 +223,7 @@
   .faq h3 {
     font-size: 1.2rem;
     margin: 1rem 0 0.5rem;
-    color: #00796b;
+    color: #6fa819;
   }
   .faq-details {
     display: none;
@@ -238,22 +238,22 @@
     border-bottom: 1px solid #e0e0e0;
   }
   .faq-question:hover {
-    color: #004d40;
+    color: #00adef;
   }
 
   /* CONTACT */
   .contact-icons i {
     margin-right: 10px;
-    color: #004d40;
+    color: #00adef;
   }
   .contact a {
     text-decoration: none;
-    color: #00796b;
+    color: #6fa819;
     font-weight: bold;
     transition: color 0.3s;
   }
   .contact a:hover {
-    color: #004d40;
+    color: #00adef;
   }
 
   /* SIMPLE CONTACT FORM */
@@ -270,7 +270,7 @@
     font-family: 'Roboto', sans-serif;
   }
   .contact-form button {
-    background-color: #004d40;
+    background-color: #00adef;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -279,14 +279,14 @@
     transition: background 0.3s;
   }
   .contact-form button:hover {
-    background-color: #00796b;
+    background-color: #6fa819;
   }
 
   /* FOOTER */
   footer {
     text-align: center;
     padding: 20px;
-    background: #004d40;
+    background: #00adef;
     color: #fff;
     margin-top: 0;
     font-size: 0.9rem;
@@ -301,7 +301,7 @@
     bottom: 30px;
     right: 30px;
     display: none;
-    background-color: #00796b;
+    background-color: #6fa819;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -315,7 +315,7 @@
     z-index: 999;
   }
   #backToTop:hover {
-    background-color: #004d40;
+    background-color: #00adef;
   }
 
   /* LIVE CHAT BUBBLE (WHATSAPP) */
@@ -369,13 +369,13 @@
   }
   .modal-content h2 {
     margin-bottom: 20px;
-    color: #004d40;
+    color: #00adef;
   }
   .modal-btn {
     display: inline-block;
     margin: 10px 5px;
     padding: 12px 20px;
-    background-color: #004d40;
+    background-color: #00adef;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -385,7 +385,7 @@
     transition: background 0.3s;
   }
   .modal-btn:hover {
-    background-color: #00796b;
+    background-color: #6fa819;
   }
 
   /* MEDIA QUERIES */
@@ -651,7 +651,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   ICON BUTTONS
 */
 .icon-btn {
-  background-color: #00796b;
+  background-color: #6fa819;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -664,7 +664,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   transition: background 0.3s;
 }
 .icon-btn:hover {
-  background-color: #004d40;
+  background-color: #00adef;
 }
 .icon-btn i {
   font-size: 1.2rem;
@@ -681,7 +681,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #00796b; 
+  background-color: #6fa819; 
   border: none;
   border-radius: 50%;
   cursor: pointer;
