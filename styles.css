@@ -34,7 +34,7 @@
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.3)
         ),
-        url('./dalle2.webp') 
+        url('./dalle3.webp') 
         no-repeat center center/cover;
       display: flex;
       flex-direction: column;
