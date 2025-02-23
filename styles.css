@@ -705,31 +705,31 @@ partial transparency. Or use 'transparent' for 100% see-through.
    =========================== */
 
 /* For tablets and devices ~768px wide or less */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   /* Stack nav items vertically */
-  nav ul {
+  /* nav ul {
     flex-direction: column;
     align-items: center;
   }
 
   nav li {
     margin: 5px 0;
-  }
+  } */
 
   /* Adjust carousel item spacing */
-  .carousel-item {
+  /* .carousel-item {
     padding: 0 40px;
-  }
+  } */
 
   /* Reduce heading sizes */
-  header h1 {
-    font-size: 2rem; /* or adjust as needed */
+  /*header h1 {
+    font-size: 2rem; 
   }
 
   .section-title {
     font-size: 1.6rem;
   }
-}
+} */
 
 /* For phones and very small devices (~600px or less) */
 @media (max-width: 600px) {
