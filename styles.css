@@ -8,8 +8,8 @@
 
   body {
     font-family: 'Roboto', sans-serif;
-    color: #838383;
-    background-color: #dfdfdf;
+    color: #252525;
+    background-color: #EDF6F9;
     line-height: 1.6;
     position: relative;
   }
@@ -21,7 +21,7 @@
     left: 0;
     width: 0;
     height: 4px;
-    background: #6fa819;
+    background: #39b9ad;
     z-index: 9999;
   }
 
@@ -41,7 +41,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: #fff;
+      color: #EDF6F9;
       margin-bottom: 0;
   }
   
@@ -79,8 +79,8 @@
   header .btn-hero {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #00adef;
-    color: #fff;
+    background-color: #006D77;
+    color: #EDF6F9;
     font-weight: 500;
     border: none;
     border-radius: 5px;
@@ -97,7 +97,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background: #00adef;
+    background: #006D77;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@
     margin: 0 5px;
   }
   nav a {
-    color: #fff;
+    color: #EDF6F9;
     text-decoration: none;
     padding: 15px 20px;
     font-weight: 500;
@@ -118,8 +118,8 @@
     display: inline-block;
   }
   nav a:hover {
-    background: #6fa819;
-    color: #fff;
+    background: #39b9ad;
+    color: #EDF6F9;
   }
 
   /* SECTIONS */
@@ -134,7 +134,7 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 2rem;
-    color: #00adef;
+    color: #006D77;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -146,7 +146,7 @@
     gap: 20px;
   }
   .service {
-    background: #fff;
+    background: #EDF6F9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -160,19 +160,19 @@
   .service h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #00adef;
+    color: #006D77;
   }
   .service i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #6fa819;
+    color: #39b9ad;
   }
 
   /* ABOUT, CONTACT, FAQ */
   .about,
   .contact,
   .faq {
-    background: #fff;
+    background: #EDF6F9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -191,7 +191,7 @@
     width: 100%;
     height: 50px; /* "Thin" height of carousel */
     overflow: hidden;
-    background-color: #fff;
+    background-color: #EDF6F9;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -206,7 +206,7 @@
     display: inline-block;
     padding: 0 120px;
     font-weight: bold;
-    color: #6fa819;
+    color: #39b9ad;
     font-size: 1rem;
   }
   @keyframes scrollOffers {
@@ -223,7 +223,7 @@
   .faq h3 {
     font-size: 1.2rem;
     margin: 1rem 0 0.5rem;
-    color: #6fa819;
+    color: #39b9ad;
   }
   .faq-details {
     display: none;
@@ -238,22 +238,22 @@
     border-bottom: 1px solid #e0e0e0;
   }
   .faq-question:hover {
-    color: #00adef;
+    color: #006D77;
   }
 
   /* CONTACT */
   .contact-icons i {
     margin-right: 10px;
-    color: #00adef;
+    color: #006D77;
   }
   .contact a {
     text-decoration: none;
-    color: #6fa819;
+    color: #39b9ad;
     font-weight: bold;
     transition: color 0.3s;
   }
   .contact a:hover {
-    color: #00adef;
+    color: #006D77;
   }
 
   /* SIMPLE CONTACT FORM */
@@ -270,8 +270,8 @@
     font-family: 'Roboto', sans-serif;
   }
   .contact-form button {
-    background-color: #00adef;
-    color: #fff;
+    background-color: #006D77;
+    color: #EDF6F9;
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -279,15 +279,15 @@
     transition: background 0.3s;
   }
   .contact-form button:hover {
-    background-color: #6fa819;
+    background-color: #39b9ad;
   }
 
   /* FOOTER */
   footer {
     text-align: center;
     padding: 20px;
-    background: #00adef;
-    color: #fff;
+    background: #006D77;
+    color: #EDF6F9;
     margin-top: 0;
     font-size: 0.9rem;
   }
@@ -301,8 +301,8 @@
     bottom: 30px;
     right: 30px;
     display: none;
-    background-color: #6fa819;
-    color: #fff;
+    background-color: #39b9ad;
+    color: #EDF6F9;
     border: none;
     border-radius: 50%;
     width: 45px;
@@ -315,7 +315,7 @@
     z-index: 999;
   }
   #backToTop:hover {
-    background-color: #00adef;
+    background-color: #006D77;
   }
 
   /* LIVE CHAT BUBBLE (WHATSAPP) */
@@ -339,7 +339,7 @@
     transform: scale(1.1);
   }
   .chat-bubble i {
-    color: #fff;
+    color: #EDF6F9;
     font-size: 1.5rem;
   }
 
@@ -358,7 +358,7 @@
     align-items: center;
   }
   .modal-content {
-    background-color: #fff;
+    background-color: #EDF6F9;
     margin: auto;
     padding: 30px;
     border-radius: 10px;
@@ -369,14 +369,14 @@
   }
   .modal-content h2 {
     margin-bottom: 20px;
-    color: #00adef;
+    color: #006D77;
   }
   .modal-btn {
     display: inline-block;
     margin: 10px 5px;
     padding: 12px 20px;
-    background-color: #00adef;
-    color: #fff;
+    background-color: #006D77;
+    color: #EDF6F9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -385,7 +385,7 @@
     transition: background 0.3s;
   }
   .modal-btn:hover {
-    background-color: #6fa819;
+    background-color: #39b9ad;
   }
 
   /* MEDIA QUERIES */
@@ -461,7 +461,7 @@
 }
 
 .card-side.front {
-  /* background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+  /* background: linear-gradient(to bottom right, #EDF6F9EDF6F9, #f9f9f9);
   padding: 20px 20px 30px;  */
 }
 
@@ -473,7 +473,7 @@
 
 .card-header {
   background: linear-gradient(to right, #d4af37, #b38b30);
-  color: #ffffff;
+  color: #EDF6F9;
   text-align: center;
   font-weight: 700;
   padding: 10px;
@@ -537,7 +537,7 @@
 
 .card-footer {
   background: linear-gradient(to right, #d4af37, #b38b30);
-  color: #ffffff;
+  color: #EDF6F9;
   text-align: center;
   font-weight: 700;
   padding: 10px;
@@ -553,7 +553,7 @@
 
 .card-footer-1 {
   background: linear-gradient(to right, #d4af37, #b38b30);
-  color: #ffffff;
+  color: #EDF6F9;
   text-align: center;
   font-weight: 700;
   padding: 10px;
@@ -626,7 +626,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
 */
 .card-modal-content {
   position: relative;
-  background-color: transparent; /* or #fff if you want a white container */
+  background-color: transparent; /* or #EDF6F9 if you want a white container */
   border-radius: 10px;
   width: 100%;
   max-width: 600px;
@@ -651,8 +651,8 @@ partial transparency. Or use 'transparent' for 100% see-through.
   ICON BUTTONS
 */
 .icon-btn {
-  background-color: #6fa819;
-  color: #fff;
+  background-color: #39b9ad;
+  color: #EDF6F9;
   border: none;
   border-radius: 50%;
   width: 40px; 
@@ -664,7 +664,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   transition: background 0.3s;
 }
 .icon-btn:hover {
-  background-color: #00adef;
+  background-color: #006D77;
 }
 .icon-btn i {
   font-size: 1.2rem;
@@ -681,7 +681,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #6fa819; 
+  background-color: #39b9ad; 
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -696,7 +696,7 @@ partial transparency. Or use 'transparent' for 100% see-through.
   transform: scale(1.1);
 }
 .floating-card-button i {
-  color: #fff;
+  color: #EDF6F9;
   font-size: 1.4rem; /* Adjust icon size */
 }
 
